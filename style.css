@@ -9,7 +9,53 @@ html, body {
     height: 100%;
     width: 100%;
 }
+nav{
+    position: fixed;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2vw 10vw;
+    justify-content: space-between;
+}
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+}
+.nav-part2 h4{
+    font-size: 1.07vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
+nav:hover .nav-bottom{
+    /* height: 100%;
+    bottom: -100%; */
+}
+.nav-bottom{
+    /* background-color: red; */
+    height: 0%;
+    position: absolute;
+    width: 79%;
+    transition: all ease 0.65s;
+    bottom: 0%;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 15vw;
+    padding-left: 18.2;
+    padding-top: 3vw;
+}
+
+.bottom-div h5{
+    /* background-color: red; */
+    margin-bottom: 0.4vw;
+}
+.bottom-div h5 span{
+    font-weight: 500;
+    font-size: 0.8vw;
+}
 #page1 {
     height: 100vh;
     width: 100%;
@@ -47,10 +93,10 @@ html, body {
 }
 #page1-something h4{
     font-weight: 400;
-    font-size: 2.5vw;
+    font-size: 1.2vw;
     text-transform: lowercase;
-    margin-top: 1vw;
-    padding: 5px 12px;
+    margin-top: 0.7vw;
+    padding: 5px 10px;
     border: 1px solid #cecbcb75;
     border-radius: 50px;
 }
